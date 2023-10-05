@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caprasimo', cursive;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0px;
+    background-color: rgb(8, 0, 14);
+    box-shadow: inset 200px 1px 33px 3px rgb(227, 149, 243);
+}
+#navbar #logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    margin: auto 11px;
+}
+#navbar #logo h1{
+    font-size: 2em;
+    margin: auto 11px;
+    color: rgb(39, 2, 54);
+
+
+}
+#navbar #logo img{
+    width: 50px ;
+    height: 50px;
+    border-radius: 33px;
+    margin: auto 11px;
+    /* filter: saturate(-500); */
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto auto;
+    padding: 15px;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 11px 33px;
+    font-size: 1em;
+    font-weight: lighter;
+
+}
+#navbar ul li a:hover{
+    color: rgb(223, 118, 223);
+    
+}
+
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(IMG/bg2.jpg) no-repeat center center/cover ;
+    /* opacity: 0.5; */
+    
+}
+#introSection::before{
+
+    /* position: absolute;  */
+    /* top: 0px; */
+    /* left: 0px; */
+    /* width: 100%; */
+    /* height: 110%; */
+    /* z-index: 1; */
+
+
+}
+#introSection div.large{
+    font-size: 3em;
+    color: rgb(189, 140, 245);
+    padding: 22px 0px;
+    text-shadow: 7px 7px 5px rgb(43, 4, 94);
+
+}
+#introSection div.small{
+    font-size: 2em;
+    color: rgb(208, 190, 226);
+    padding: 22px 0px;
+    margin-bottom: 15vh;
+    text-shadow: 5px 5px 5px rgb(7, 0, 14);
+}
+
+
+#missionSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    /* background-color: rgb(111, 233, 233); */
+}
+#cards1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 1% 0%;
+}
+#cards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 1% 0%;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 11px;
+    width: 30%;
+    height: 90%;
+    margin: 0% 1.5%;
+    padding: 11px 22px;
+}
+.card h3{
+    position: relative;
+    top: 11px;
+    margin-bottom: 22px;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    margin: 22px auto;
+    
+}
+
+.card-img img{
+    width: 125px;
+    height: 90px;
+}
+.card-content{
+    padding: 11px;
+}
+
+
+#sponsorsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(245, 217, 248);
+    
+}
+#sponsorsSection .spimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 440px;
+    margin: auto 55px;
+}
+#sponsorsSection #sponsors1{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 1% 0%;
+}
+#sponsorsSection #sponsors2{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 1% 0%;
+}
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(15, 1, 24);
+    box-shadow: inset -10px 1px 22px 1px rgb(227, 149, 243);
+    color: white;
+    width: 100vw;
+    position: relative;
+    bottom: 0px;
+
+}
+
+
+
+/* UTILITY CLASSES */
+
+.btn{
+    margin: 11px 22px;
+    padding: 7px 22px;
+    font-size: 1.25em;
+    background-color: rgb(227, 149, 243);
+    color: rgb(44, 3, 68);
+    border: 2px solid rgb(41, 3, 66);
+    transition: all .5s ease;
+    
+}
+.btn:hover{
+    box-shadow: 1px 1px 11px 11px rgb(48, 1, 58);
+    border: none;
+
+}
+
+.h-primary{
+    font-size: 1.5em;
+    margin: 22px;
+}
+.center{
+    text-align: center;
+}
